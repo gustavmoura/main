@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Votação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <navbar id="navbar">
+      <div class="navbar-container">
+        <h2 class="title">Sistema Voto</h2>
+        <ul class="navbar-items">
+          <li class="navbar-item">Teste</li>
+          <li class="navbar-item">Teste</li>
+          <li class="navbar-item">Teste</li>
+          <li class="navbar-item">Teste</li>
+        </ul>
+      </div>
+    </navbar>
+
+    <main class="main">
+      <div class="main-conteiner">
+        <h3>Teste Teste</h3>
+        <p>Lorem ipsum dolor sit amet!</p>
+        <div class="div-buttons">
+          <button class="button-item btn0l">Like</button>
+          <button class="button-item btn0d">Deslike</button>
+        </div>
+      </div>
+
+      <div class="main-conteiner">
+        <h3>Teste Teste</h3>
+        <p>Lorem ipsum dolor sit amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus aliquam officia fuga exercitationem, provident deserunt assumenda perferendis laudantium nemo veritatis asperiores voluptatum ipsa aliquid. Libero nobis fugit nisi accusantium.</p>
+        <div class="div-buttons">
+          <button class="button-item btn1l">Like</button>
+          <button class="button-item btn1d">Deslike</button>
+        </div>
+      </div>
+
+      <div class="main-conteiner">
+        <h3>Teste Teste</h3>
+        <p>Lorem ipsum dolor sit amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis nobis excepturi, voluptate blanditiis culpa inventore quasi rem reiciendis deserunt consequuntur, consequatur, animi amet fugiat. Molestias quis odio libero distinctio repellat.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum doloremque voluptatibus aliquid totam laudantium natus dicta incidunt fuga hic cumque sapiente error, veniam magni nobis optio nemo doloribus esse.
+        </p>
+        <div class="div-buttons">
+          <button class="button-item btn2l">Like</button>
+          <button class="button-item btn2d">Deslike</button>
+        </div>
+      </div>
+
+      <div class="main-conteiner">
+        <h3>Lorem</h3>
+        <p>Lorem ipsum dolor sit amet!</p>
+        <div class="div-buttons">
+          <button class="button-item btn3l">Like</button>
+          <button class="button-item btn3d">Deslike</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js"
+      import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js"
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDkW5ZoYInJSOmL_PnSqGCJuhGadG2JHlI",
+        authDomain: "fir-test-gsm.firebaseapp.com",
+        projectId: "fir-test-gsm",
+        storageBucket: "fir-test-gsm.appspot.com",
+        messagingSenderId: "360720372035",
+        appId: "1:360720372035:web:df9befab0dfc7d88efdff6",
+      };
+
+      const app = initializeApp(firebaseConfig)
+      const db = getFirestore(app)
+
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
